@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup</title>
+  </head>
+  <body id="signup" class="bg-black text-danger" >
+    <main>
+      <section class="border shadow-lg rounded-3 p-4">
+        <h1 class="mb-3 mb-lg-4 text-center">Smart Login System</h1>
+
+        <form>
+          <div class="mb-3">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form-control"
+              placeholder="Enter your username"
+              aria-label="Enter your Username"
+            />
+            <p class="invalid-feedback">Username must be 4~20 characters long, containing only letters and numbers</p>
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+              aria-label="Enter your Email"
+            />
+            <p class="invalid-feedback">Invalid Email</p>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              placeholder="Enter your password"
+              aria-label="Enter your password"
+            />
+            <p class="invalid-feedback">
+              Password must be at least 8 characters, containing at least 1 letter and 1 number
+            </p>
+          </div>
+          <p class="mb-3 text-center text-danger" id="feedback"></p>
+          <button class="w-100 btn btn-outline-danger mb-2">Sign Up</button>
+          <hr />
+          <p class="text-center mb-0">Already have an account? <a href="./login.html">Sign In</a></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script src="./signup.js"></script>
+  </body>
+</html>

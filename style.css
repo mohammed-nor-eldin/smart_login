@@ -1,0 +1,15 @@
+#login main,
+#welcome main,
+#signup main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+#login main section,
+#signup main section {
+  flex: 1;
+  max-width: 600px;
+}
